@@ -155,7 +155,7 @@
             <article class="depoimento-cliente">
               <img
                 src="/img/nonno.tiff"
-                alt="homem satisfeito com a eficiencia do produto"
+                alt="Homem satisfeito com a eficiencia do produto"
                 class="foto-cliente"
                 loading="lazy"
                 onerror="this.style.display='none'"
@@ -271,12 +271,7 @@
         </details>
       </section>
 
-      <!-- PROBLEMA: ORDEM DOS PASSOS COMPLETAMENTE ERRADA! -->
-      <!-- Deveria ser: Passo 1 → 2 → 3 → 4, mas está 4 → 3 → 1 → 2 -->
-
-      <!-- PROBLEMA: Div usada em vez de tag semântica de seção -->
-      <div id="secao-compra" class="secao-compra">
-        <!-- PROBLEMA: h6 usado em hierarquia incorreta -->
+      <section id="secao-compra" class="secao-compra">
         <h1 id="titulo-compra">
           <span>🛒</span>
           Fazer Pedido
@@ -293,9 +288,8 @@
             >
           </div>
 
-          <!-- PASSO 1 EM TERCEIRO (ERRADO!) -->
-          <!-- PROBLEMA: Fieldset sem legend apropriada -->
-          <div class="passo-compra passo-1">
+          <!-- PASSO 1 -->
+          <fieldset class="passo-compra passo-1">
             <h1><strong>Passo 1: Escolha o tamanho do perfume</strong></h1>
 
             <p class="instrucao">Selecione uma das opções abaixo:</p>
@@ -315,7 +309,7 @@
                   <!-- PROBLEMA: Alt text genérico -->
                   <img
                     src="https://images.unsplash.com/photo-1615634260167-c8cdede054de?w=80&h=100&fit=crop&crop=center&q=90"
-                    alt="produto meia-boca"
+                    alt="frasco de 50ml"
                     class="mini-frasco"
                   />
                 </div>
@@ -377,11 +371,10 @@
                 </div>
               </div>
             </div>
-          </div>
+          </fieldset>
 
-          <!-- PASSO 2 POR ÚLTIMO (ERRADO!) -->
-          <!-- PROBLEMA: Fieldset sem legend apropriada -->
-          <div class="passo-compra passo-2">
+          <!-- PASSO 2  -->
+          <fieldset class="passo-compra passo-2">
             <h1><strong>Passo 2: Quantidade de produtos</strong></h1>
 
             <div class="quantidade-container">
@@ -405,11 +398,10 @@
                 Máximo 5 unidades por pedido
               </p>
             </div>
-          </div>
+          </fieldset>
 
-          <!-- PASSO 3 EM SEGUNDO (ERRADO!) -->
-          <!-- PROBLEMA: Fieldset sem legend apropriada -->
-          <div class="passo-compra passo-3">
+          <!-- PASSO 3  -->
+          <fieldset class="passo-compra passo-3">
             <h1><strong>Passo 3: Seus dados para entrega</strong></h1>
 
             <div class="form-grid">
@@ -500,7 +492,7 @@
                 />
               </div>
             </div>
-          </div>
+          </fieldset>
 
           <!-- PROBLEMA: Resumo do pedido sem contexto semântico e sem atualizações em tempo real -->
           <div class="resumo-pedido">
@@ -551,9 +543,8 @@
             </div>
           </div>
 
-          <!-- PASSO 4 PRIMEIRO (ERRADO!) -->
-          <!-- PROBLEMA: Fieldset sem legend apropriada -->
-          <div class="passo-compra passo-4">
+          <!-- PASSO 4 -->
+          <fieldset class="passo-compra passo-4">
             <h1><strong>Passo 4: Confirmar pedido</strong></h1>
 
             <div class="info-pagamento">
@@ -629,9 +620,9 @@
                 Entrega em 3-5 dias úteis
               </div>
             </div>
-          </div>
+          </fieldset>
         </form>
-      </div>
+      </section>
 
       <!-- PROBLEMA: Seção de sucesso sem contexto semântico -->
       <div id="mensagem-sucesso" class="oculto secao-sucesso">
@@ -671,12 +662,11 @@
       </div>
     </main>
 
-    <!-- PROBLEMA: Footer sem tag semântica apropriada -->
-    <div class="rodape">
+    <footer class="rodape">
       <p>&copy; 2024 SIFURRAH. Todos os direitos reservados.</p>
       <p class="info-acessibilidade">
         Página otimizada para leitores de tela e navegação por teclado
       </p>
-    </div>
+    </footer>
   </body>
 </html>

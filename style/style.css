@@ -18,7 +18,7 @@ body {
     padding: 0;
 }
 
-main {
+.conteudo-principal {
     max-width: 900px;
     margin: 0 auto;
     background: #ffffff;
