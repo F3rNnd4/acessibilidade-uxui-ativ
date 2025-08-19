@@ -329,7 +329,7 @@ main {
 h1 {
     font-size: 2.5rem;
     font-weight: 700;
-    color: #ffffff;
+    color: #1f1f1f;
 }
 
 h2 {
@@ -910,6 +910,7 @@ input[type="radio"]:checked + .metodo-pagamento.destaque {
     border-radius: 8px;
     background: #ffffff;
     overflow: hidden;
+    padding: 1.5rem;
 }
 
 .info-expandivel summary {
