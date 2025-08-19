@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
-  <!-- ...código existente... -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SIFURRAH - EAU de SUVACU</title>
@@ -22,22 +21,11 @@
         </div>
 
         <div class="titulo-produto">
-            <section class="garantias" aria-label="Garantias da loja">
-              <ul>
-                <li class="garantia">
-                  <span class="icone-garantia" aria-hidden="true">✓</span>
-                  <span class="texto-garantia">Garantia de 30 dias</span>
-                </li>
-                <li class="garantia">
-                  <span class="icone-garantia" aria-hidden="true">🚚</span>
-                  <span class="texto-garantia">Frete grátis acima de R$ 200</span>
-                </li>
-                <li class="garantia">
-                  <span class="icone-garantia" aria-hidden="true">⚡</span>
-                  <span class="texto-garantia">Entrega em 3-5 dias úteis</span>
-                </li>
-              </ul>
-            </section>
+              <h1 class="nome-perfume">ESSENCIA DE SUVACU</h1>
+              <p class="subtitulo-perfume">O Perfume dos Sonhos</p>
+            </div>
+        <section class="container-cabecalho">
+          <div class="imagem-principal">
             <img
               src="https://images.unsplash.com/photo-1541643600914-78b084683601?w=400&h=500&fit=crop&crop=center&q=80"
               alt="perfume chanel numero cinco"
@@ -53,56 +41,47 @@
 
           <div class="info-cabecalho">
             <div class="propaganda-principal">
-              <fieldset class="opcao-tamanho">
-                <legend class="visually-hidden">Escolha o tamanho do frasco</legend>
-                <label for="frasco-pequeno">
-                  <input
-                    type="radio"
-                    id="frasco-pequeno"
-                    name="tamanho"
-                    value="pequeno"
-                    checked
-                    aria-checked="true"
-                    aria-label="Frasco pequeno 30ml"
-                    required
-                  />
-                  <span class="mini-frasco" aria-hidden="true"></span>
-                  30ml
-                </label>
-                <label for="frasco-grande">
-                  <input
-                    type="radio"
-                    id="frasco-grande"
-                    name="tamanho"
-                    value="grande"
-                    aria-label="Frasco grande 100ml"
-                    required
-                  />
-                  <span class="mini-frasco" aria-hidden="true"></span>
-                  100ml
-                </label>
-              </fieldset>
+              <p class="frase-impacto">
+                "Uma fragrância que desperta mistério e sedução a cada borrifo"
+              </p>
+              <p class="descricao-luxo">
+                Criado pelos melhores perfumistas franceses com ingredientes
+                raros e preciosos. Uma experiência olfativa única que marca sua
+                presença por onde você passa.
+              </p>
+            </div>
 
-              <fieldset class="dados-pessoais">
-                <legend class="visually-hidden">Dados pessoais</legend>
-                <div class="campo-formulario">
-                  <label for="nome">Nome completo</label>
-                  <input type="text" id="nome" name="nome" required aria-required="true" />
-                </div>
-                <div class="campo-formulario">
-                  <label for="email">E-mail</label>
-                  <input type="email" id="email" name="email" required aria-required="true" />
-                </div>
-                <div class="campo-formulario">
-                  <label for="endereco">Endereço</label>
-                  <input type="text" id="endereco" name="endereco" required aria-required="true" />
-                </div>
-                <div class="campo-formulario">
-                  <label for="cep">CEP</label>
-                  <input type="text" id="cep" name="cep" required aria-required="true" pattern="\d{5}-\d{3}" aria-describedby="ajuda-cep" />
-                  <span id="ajuda-cep" class="visually-hidden">Formato: 00000-000</span>
-                </div>
-              </fieldset>
+            <div class="credenciais-produto">
+              <!-- PROBLEMA: Avaliação sem contexto semântico -->
+              <div class="avaliacao-estrelas">
+                <span class="estrelas">★★★★★</span>
+                <span class="texto-avaliacao"
+                  >4,8 de 5 estrelas | 2.847 clientes satisfeitos</span
+                >
+              </div>
+
+              <!-- PROBLEMA: Lista de prêmios sem estrutura semântica -->
+              <div class="premios-reconhecimentos">
+                <p class="premio">
+                  <span>🏆</span>
+                  Melhor Fragrância Feminina 2024
+                </p>
+                <p class="premio">
+                  <span>🌟</span>
+                  Revista Vogue Beauty Awards
+                </p>
+              </div>
+
+              <div class="disponibilidade">
+                <!-- PROBLEMA: Informação urgente sem marcação semântica -->
+                <p class="estoque-urgencia">
+                  <span>⚡</span>
+                  Apenas 7 unidades restantes em estoque
+                </p>
+                <p class="frete-info">
+                  <span>🚚</span>
+                  Frete grátis para todo Brasil acima de R$ 200
+                </p>
               </div>
             </div>
           </div>
@@ -170,39 +149,41 @@
           </div>
 
           <div class="avaliacoes-destaque">
-            <section class="avaliacoes-destaque" aria-labelledby="titulo-avaliacoes">
-              <h3 id="titulo-avaliacoes"><span>⭐</span> O que dizem nossos clientes</h3>
-              <article class="depoimento-cliente">
-                <img
-                  src="/img/nonno.tiff"
-                  alt="Foto de Marc Nonno, cliente satisfeito de Turim, Itália"
-                  class="foto-cliente"
-                  loading="lazy"
-                  onerror="this.style.display='none'"
-                />
-                <blockquote>
-                  <p>
-                    "Antes eu passava qualquer paninho molhado, agora me transformei com Sifurrah"
-                  </p>
-                  <cite>- Marc Nonno, Turim - Itália</cite>
-                </blockquote>
-              </article>
-              <article class="depoimento-cliente">
-                <img
-                  src="/img/baran.tiff"
-                  alt="Foto de Baran Gaum, cliente satisfeito de Istambul, Turquia"
-                  class="foto-cliente"
-                  loading="lazy"
-                  onerror="this.style.display='none'"
-                />
-                <blockquote>
-                  <p>
-                    "Perfume maravilhoso que elimina qualquer cheiro de 'curry' do meu corpo. Minha namorada vai ao delírio"
-                  </p>
-                  <cite>- Baran Gaum, Istambul - Turquia</cite>
-                </blockquote>
-              </article>
-            </section>
+            <h3><span>⭐</span> O que dizem nossos clientes</h3>
+            <article class="depoimento-cliente">
+              <img
+                src="/img/nonno.tiff"
+                alt="Homem satisfeito com a eficiencia do produto"
+                class="foto-cliente"
+                loading="lazy"
+                onerror="this.style.display='none'"
+              />
+              <blockquote>
+                <p>
+                  "Antes eu passava qualquer paninho molhado, agora me
+                  transformei com Sifurrah"
+                </p>
+                <span>- Marc Nonno, Turim - Itália</span>
+              </blockquote>
+            </article>
+
+            <article class="depoimento-cliente">
+              <blockquote>
+                <p>
+                  "Perfume maravilhoso que elimina qualquer cheiro de "curry" do
+                  meu corpo. Minha namorada vai ao delírio"
+                </p>
+                <span>- Baran Gaum, Istambul - Turquia</span>
+              </blockquote>
+              <img
+                src="/img/baran.tiff"
+                alt="homem satisfeito com a eficiencia do produto"
+                class="foto-cliente"
+                loading="lazy"
+                onerror="this.style.display='none'"
+              />
+            </article>
+          </div>
         </div>
       </section>
 
@@ -212,7 +193,21 @@
           Informações Adicionais
         </h1>
 
+        <details>
+          <summary>Política de devolução e garantia</summary>
+          <p>
+            Você tem 30 dias para trocar ou devolver o produto se não estiver
+            satisfeito. O reembolso é integral e o frete de devolução é por
+            nossa conta.
+          </p>
+        </details>
+
       <section class="secao-extra">
+        <h1 id="titulo-informacoes">
+          <span>ℹ️</span>
+          Informações Adicionais
+        </h1>
+
         <details class="info-expandivel">
           <h2>
             <span>📄</span>
@@ -309,6 +304,7 @@
               />
               <div class="opcao-tamanho">
                 <div class="tamanho-visual">
+                  <!-- PROBLEMA: Alt text genérico -->
                   <img
                     src="https://images.unsplash.com/photo-1615634260167-c8cdede054de?w=80&h=100&fit=crop&crop=center&q=90"
                     alt="frasco de 50ml"
@@ -332,9 +328,10 @@
               />
               <div class="opcao-tamanho popular">
                 <div class="tamanho-visual">
+                  <!-- PROBLEMA: Alt text genérico -->
                   <img
                     src="https://images.unsplash.com/photo-1541643600914-78b084683601?w=80&h=100&fit=crop&crop=center&q=90"
-                    alt="frasco de 75ml"
+                    alt="frasco lixo"
                     class="mini-frasco"
                   />
                 </div>
@@ -356,9 +353,10 @@
               />
               <div class="opcao-tamanho melhor-valor">
                 <div class="tamanho-visual">
+                  <!-- PROBLEMA: Alt text genérico -->
                   <img
                     src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?w=80&h=100&fit=crop&crop=center&q=90"
-                    alt="frasco de 100ml"
+                    alt="imagem do produto bem ruimzim"
                     class="mini-frasco"
                   />
                 </div>
@@ -495,7 +493,7 @@
           </fieldset>
 
           <!-- PROBLEMA: Resumo do pedido sem contexto semântico e sem atualizações em tempo real -->
-          <section class="resumo-pedido" aria-labelledby="titulo-resumo" aria-live="polite">
+          <div class="resumo-pedido">
             <h3 id="titulo-resumo">
               <span>📄</span>
               Resumo do Seu Pedido
@@ -534,7 +532,7 @@
                 </li>
               </ul>
             </div>
-          </section>
+          </div>
 
           <!-- PASSO 4 -->
           <fieldset class="passo-compra passo-4">
@@ -545,46 +543,45 @@
                 <span>💳</span>
                 Formas de pagamento aceitas
               </h2>
-              <fieldset class="metodos-pagamento">
-                <legend class="visually-hidden">Escolha o método de pagamento</legend>
-                <label for="pagamento-cartao" class="metodo-pagamento" id="desc-cartao">
-                  <input
-                    type="radio"
-                    id="pagamento-cartao"
-                    name="pagamento"
-                    value="cartao"
-                    aria-label="Cartão de crédito"
-                    required
-                  />
-                  <span aria-hidden="true">💳</span>
+              <!-- PROBLEMA: Grupo de radio buttons sem estrutura semântica -->
+              <div class="metodos-pagamento">
+                <!-- PROBLEMA: Input sem label associado -->
+                <input
+                  type="radio"
+                  id="pagamento-cartao"
+                  name="pagamento"
+                  value="cartao"
+                />
+                <div class="metodo-pagamento" id="desc-cartao">
+                  <span>💳</span>
                   Cartão de crédito
-                </label>
-                <label for="pagamento-pix" class="metodo-pagamento destaque" id="desc-pix">
-                  <input
-                    type="radio"
-                    id="pagamento-pix"
-                    name="pagamento"
-                    value="pix"
-                    checked
-                    aria-label="PIX (10% desconto)"
-                    required
-                  />
-                  <span aria-hidden="true">🔄</span>
+                </div>
+
+                <!-- PROBLEMA: Input sem label associado -->
+                <input
+                  type="radio"
+                  id="pagamento-pix"
+                  name="pagamento"
+                  value="pix"
+                  checked
+                />
+                <div class="metodo-pagamento destaque" id="desc-pix">
+                  <span>🔄</span>
                   PIX (10% desconto)
-                </label>
-                <label for="pagamento-boleto" class="metodo-pagamento" id="desc-boleto">
-                  <input
-                    type="radio"
-                    id="pagamento-boleto"
-                    name="pagamento"
-                    value="boleto"
-                    aria-label="Boleto bancário"
-                    required
-                  />
-                  <span aria-hidden="true">📄</span>
+                </div>
+
+                <!-- PROBLEMA: Input sem label associado -->
+                <input
+                  type="radio"
+                  id="pagamento-boleto"
+                  name="pagamento"
+                  value="boleto"
+                />
+                <div class="metodo-pagamento" id="desc-boleto">
+                  <span>📄</span>
                   Boleto bancário
-                </label>
-              </fieldset>
+                </div>
+              </div>
             </div>
 
             <button
@@ -647,16 +644,9 @@
 
     <footer class="rodape">
       <p>&copy; 2024 SIFURRAH. Todos os direitos reservados.</p>
-      <p class="info-acessibilidade" aria-live="polite">
+      <p class="info-acessibilidade">
         Página otimizada para leitores de tela e navegação por teclado
       </p>
-      <nav aria-label="Links do rodapé">
-        <ul class="links-rodape">
-          <li><a href="#">Política de Privacidade</a></li>
-          <li><a href="#">Termos de Uso</a></li>
-          <li><a href="#">Contato</a></li>
-        </ul>
-      </nav>
     </footer>
   </body>
 </html>
