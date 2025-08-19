@@ -13,35 +13,30 @@
   </head>
 
   <body>
-    <!-- PROBLEMA: Esta div deveria ser uma tag semântica mais apropriada -->
-    <div id="conteudo-principal">
-      <!-- PROBLEMA: Esta div deveria usar uma tag semântica para cabeçalho -->
-      <div class="cabecalho-produto">
+    <main id="conteudo-principal">
+      <header class="cabecalho-produto">
         <div class="marca-logo">
-          <!-- PROBLEMA: h1 não deveria estar dentro de um cabeçalho secundário -->
-          <h5 class="logo-sifurrah">SIFURRAH</h5>
+          <h1 class="logo-sifurrah">SIFURRAH</h1>
           <p class="slogan-marca">Fragrâncias Exclusivas de Luxo</p>
         </div>
 
-        <div class="container-cabecalho">
+        <section class="container-cabecalho">
           <div class="imagem-principal">
-            <!-- PROBLEMA: Alt text muito genérico e sem contexto -->
             <img
               src="https://images.unsplash.com/photo-1541643600914-78b084683601?w=400&h=500&fit=crop&crop=center&q=80"
-              alt="perfume fedido"
+              alt="perfume chanel numero cinco"
               class="foto-produto"
             />
-            <!-- PROBLEMA: Div sem papel semântico definido -->
-            <div class="badges-produto">
-              <!-- PROBLEMA: Spans sem contexto semântico -->
-              <span class="badge novo"> <span>🆕</span> LANÇAMENTO </span>
-              <span class="badge melhor-vendido">
+
+            <section class="badges-produto">
+              <p class="badge novo"> <span>🆕</span> LANÇAMENTO </p>
+              <p class="badge melhor-vendido">
                 <span>🏆</span> Nº1 EM VENDAS
-              </span>
-              <span class="badge exclusivo">
+              </p>
+              <p class="badge exclusivo">
                 <span>💎</span> EDIÇÃO LIMITADA
-              </span>
-            </div>
+              </p>
+            </section>
           </div>
 
           <div class="info-cabecalho">
@@ -96,7 +91,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </section>
 
         <!-- PROBLEMA: Banner de oferta sem papel semântico -->
         <div class="oferta-especial">
@@ -108,7 +103,7 @@
             <span class="tempo-limitado">Por tempo limitado!</span>
           </div>
         </div>
-      </div>
+      </header>
 
       <!-- PROBLEMA: Div usada em vez de tag semântica de seção -->
       <div class="secao-info">
@@ -281,10 +276,10 @@
       <!-- PROBLEMA: Div usada em vez de tag semântica de seção -->
       <div id="secao-compra" class="secao-compra">
         <!-- PROBLEMA: h6 usado em hierarquia incorreta -->
-        <h6 id="titulo-compra">
+        <h1 id="titulo-compra">
           <span>🛒</span>
           Fazer Pedido
-        </h6>
+        </h1>
         <!-- PROBLEMA: Formulário sem atributos de acessibilidade -->
         <form novalidate>
           <!-- PROBLEMA: Barra de progresso sem atributos ARIA -->
@@ -300,7 +295,7 @@
           <!-- PASSO 1 EM TERCEIRO (ERRADO!) -->
           <!-- PROBLEMA: Fieldset sem legend apropriada -->
           <div class="passo-compra passo-1">
-            <h4><strong>Passo 1: Escolha o tamanho do perfume</strong></h4>
+            <h1><strong>Passo 1: Escolha o tamanho do perfume</strong></h1>
 
             <p class="instrucao">Selecione uma das opções abaixo:</p>
 
@@ -386,7 +381,7 @@
           <!-- PASSO 2 POR ÚLTIMO (ERRADO!) -->
           <!-- PROBLEMA: Fieldset sem legend apropriada -->
           <div class="passo-compra passo-2">
-            <h4><strong>Passo 2: Quantidade de produtos</strong></h4>
+            <h1><strong>Passo 2: Quantidade de produtos</strong></h1>
 
             <div class="quantidade-container">
               <!-- PROBLEMA: Select sem label associado -->
@@ -414,7 +409,7 @@
           <!-- PASSO 3 EM SEGUNDO (ERRADO!) -->
           <!-- PROBLEMA: Fieldset sem legend apropriada -->
           <div class="passo-compra passo-3">
-            <h4><strong>Passo 3: Seus dados para entrega</strong></h4>
+            <h1><strong>Passo 3: Seus dados para entrega</strong></h1>
 
             <div class="form-grid">
               <div class="grupo-campo campo-completo">
@@ -558,14 +553,14 @@
           <!-- PASSO 4 PRIMEIRO (ERRADO!) -->
           <!-- PROBLEMA: Fieldset sem legend apropriada -->
           <div class="passo-compra passo-4">
-            <h4><strong>Passo 4: Confirmar pedido</strong></h4>
+            <h1><strong>Passo 4: Confirmar pedido</strong></h1>
 
             <div class="info-pagamento">
               <!-- PROBLEMA: h4 usado fora de hierarquia -->
-              <h4 id="titulo-pagamento">
+              <h2 id="titulo-pagamento">
                 <span>💳</span>
                 Formas de pagamento aceitas
-              </h4>
+              </h2>
               <!-- PROBLEMA: Grupo de radio buttons sem estrutura semântica -->
               <div class="metodos-pagamento">
                 <!-- PROBLEMA: Input sem label associado -->
@@ -676,7 +671,7 @@
           </button>
         </div>
       </div>
-    </div>
+    </main>
 
     <!-- PROBLEMA: Footer sem tag semântica apropriada -->
     <div class="rodape">
