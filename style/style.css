@@ -18,7 +18,7 @@ body {
     padding: 0;
 }
 
-main {
+.conteudo-principal {
     max-width: 900px;
     margin: 0 auto;
     background: #ffffff;
@@ -51,6 +51,7 @@ main {
     position: relative;
     z-index: 3;
     border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+    padding: 2rem;
 }
 
 .logo-sifurrah {
@@ -93,11 +94,13 @@ main {
 
 .imagem-principal {
     position: relative;
+    width: 350px;
+    height: 350px;
 }
 
 .foto-produto {
-    width: 200px;
-    height: 280px;
+    width: 320px;
+    height: 350px;
     object-fit: cover;
     border-radius: 15px;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
