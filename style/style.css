@@ -1,3 +1,10 @@
+.nome-perfume, .subtitulo-perfume {
+    color: #f1c40f !important;
+    background: none !important;
+    -webkit-background-clip: initial !important;
+    background-clip: initial !important;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.9);
+}
 .garantias ul {
     display: flex;
     flex-direction: row;

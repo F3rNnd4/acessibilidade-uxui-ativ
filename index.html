@@ -13,22 +13,25 @@
   </head>
 
   <body>
-    <main id="conteudo-principal">
-      <header class="cabecalho-produto">
+  <main id="conteudo-principal" role="main">
+      <header class="cabecalho-produto" role="banner">
         <div class="marca-logo">
           <h1 class="logo-sifurrah">SIFURRAH</h1>
           <p class="slogan-marca">Fragrâncias Exclusivas de Luxo</p>
         </div>
 
         <div class="titulo-produto">
-          <h1 class="nome-perfume">ESSENCIA DE SUVACU</h1>
+          <h2 class="nome-perfume">ESSENCIA DE SUVACU</h2>
           <p class="subtitulo-perfume">O Perfume dos Sonhos</p>
         </div>
+        <nav aria-label="Navegação principal" role="navigation">
+          <!-- Adicione links de navegação aqui se houver -->
+        </nav>
         <section class="container-cabecalho">
           <div class="imagem-principal">
             <img
               src="https://images.unsplash.com/photo-1541643600914-78b084683601?w=400&h=500&fit=crop&crop=center&q=80"
-              alt="perfume chanel numero cinco"
+              alt="Frasco elegante do perfume Essencia de Suvacu da SIFURRAH, em vidro dourado com design sofisticado, sobre fundo neutro"
               class="foto-produto"
             />
 
@@ -99,8 +102,8 @@
         </div>
       </header>
 
-      <section class="secao-info">
-        <h1>Informações do Produto</h1>
+      <section class="secao-info" aria-labelledby="titulo-produto-info">
+        <h2 id="titulo-produto-info">Informações do Produto</h2>
 
         <div class="info-produto">
           <div class="descricao-principal">
@@ -115,35 +118,27 @@
 
           <div class="grid-info">
             <div class="card-info">
-              <h3><span>🌸</span> Notas Olfativas</h3>
-              <section aria-labelledby="notas-titulo">
-                <h2 id="notas-titulo" class="visually-hidden">
-                  Notas do Perfume
-                </h2>
-                <ul>
-                  <li>
-                    <strong>Notas de Topo:</strong> Bergamota, Limão Siciliano,
-                    Pêra
-                  </li>
-                  <li>
-                    <strong>Notas de Coração:</strong> Jasmim, Rosa Damascena,
-                    Peônia
-                  </li>
-                  <li>
-                    <strong>Notas de Fundo:</strong> Sândalo, Âmbar, Almíscar
-                    Branco
-                  </li>
-                </ul>
-              </section>
+              <h3>Notas Olfativas</h3>
+              <ul>
+                <li>
+                  <strong>Notas de Topo:</strong> Bergamota, Limão Siciliano, Pêra
+                </li>
+                <li>
+                  <strong>Notas de Coração:</strong> Jasmim, Rosa Damascena, Peônia
+                </li>
+                <li>
+                  <strong>Notas de Fundo:</strong> Sândalo, Âmbar, Almíscar Branco
+                </li>
+              </ul>
             </div>
 
             <div class="card-info">
-              <h3><span>📋</span> Especificações Técnicas</h3>
+              <h3>Especificações Técnicas</h3>
               <ul>
                 <li>Concentração: Eau de Parfum 20%</li>
                 <li>Fixação: 8 a 12 horas</li>
-                <li><span>🏆</span> Melhor Fragrância Feminina 2024</li>
-                <li><span>📦</span> Embalagem premium</li>
+                <li>Melhor Fragrância Feminina 2024</li>
+                <li>Embalagem premium</li>
               </ul>
             </div>
           </div>
@@ -153,7 +148,7 @@
             <article class="depoimento-cliente">
               <img
                 src="/img/nonno.tiff"
-                alt="Homem satisfeito com a eficiencia do produto"
+                alt="Marc Nonno, cliente satisfeito da SIFURRAH"
                 class="foto-cliente"
                 loading="lazy"
                 onerror="this.style.display='none'"
@@ -177,7 +172,7 @@
               </blockquote>
               <img
                 src="/img/baran.tiff"
-                alt="homem satisfeito com a eficiencia do produto"
+                alt="Baran Gaum, cliente satisfeito da SIFURRAH"
                 class="foto-cliente"
                 loading="lazy"
                 onerror="this.style.display='none'"
@@ -187,18 +182,13 @@
         </div>
       </section>
 
-      <section class="secao-extra">
-        <h1 id="titulo-informacoes">
-          <span>ℹ️</span>
-          Informações Adicionais
-        </h1>
+      <section class="secao-extra" aria-labelledby="titulo-informacoes">
+        <h2 id="titulo-informacoes"><span aria-hidden="true">ℹ️</span> Informações Adicionais</h2>
 
         <details>
-          <summary>Política de devolução e garantia</summary>
+          <summary tabindex="0">Política de devolução e garantia</summary>
           <p>
-            Você tem 30 dias para trocar ou devolver o produto se não estiver
-            satisfeito. O reembolso é integral e o frete de devolução é por
-            nossa conta.
+            Você tem 30 dias para trocar ou devolver o produto se não estiver satisfeito. O reembolso é integral e o frete de devolução é por nossa conta.
           </p>
         </details>
 
@@ -209,24 +199,16 @@
         </h1>
 
         <details class="info-expandivel">
-          <h2>
-            <span>📄</span>
-            Política de devolução e garantia
-          </h2>
+          <summary tabindex="0">Política de devolução e garantia</summary>
           <div class="conteudo-expandivel">
             <p>
-              Você tem 30 dias para trocar ou devolver o produto se não estiver
-              satisfeito. O reembolso é integral e o frete de devolução é por
-              nossa conta.
+              Você tem 30 dias para trocar ou devolver o produto se não estiver satisfeito. O reembolso é integral e o frete de devolução é por nossa conta.
             </p>
           </div>
         </details>
 
         <details class="info-expandivel">
-          <h2>
-            <span>❓</span>
-            Perguntas frequentes
-          </h2>
+          <summary tabindex="0">Perguntas frequentes</summary>
           <div class="conteudo-expandivel">
             <div class="faq-item">
               <h4>O perfume é unissex?</h4>
@@ -246,10 +228,7 @@
         </details>
 
         <details class="info-expandivel">
-          <h2>
-            <span>⭐</span>
-            Mais avaliações dos clientes
-          </h2>
+          <summary tabindex="0">Mais avaliações dos clientes</summary>
           <div class="conteudo-expandivel">
             <div class="avaliacoes-lista">
               <blockquote class="avaliacao-item">
@@ -307,7 +286,7 @@
                   <!-- PROBLEMA: Alt text genérico -->
                   <img
                     src="https://images.unsplash.com/photo-1615634260167-c8cdede054de?w=80&h=100&fit=crop&crop=center&q=90"
-                    alt="frasco de 50ml"
+                    alt="Frasco de 50ml do perfume Essencia de Suvacu"
                     class="mini-frasco"
                   />
                 </div>
@@ -331,7 +310,7 @@
                   <!-- PROBLEMA: Alt text genérico -->
                   <img
                     src="https://images.unsplash.com/photo-1541643600914-78b084683601?w=80&h=100&fit=crop&crop=center&q=90"
-                    alt="frasco lixo"
+                    alt="Frasco de 75ml do perfume Essencia de Suvacu"
                     class="mini-frasco"
                   />
                 </div>
@@ -356,7 +335,7 @@
                   <!-- PROBLEMA: Alt text genérico -->
                   <img
                     src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?w=80&h=100&fit=crop&crop=center&q=90"
-                    alt="imagem do produto bem ruimzim"
+                    alt="Frasco de 100ml do perfume Essencia de Suvacu"
                     class="mini-frasco"
                   />
                 </div>
@@ -403,92 +382,86 @@
             <h1><strong>Passo 3: Seus dados para entrega</strong></h1>
 
             <div class="form-grid">
-              <div class="grupo-campo campo-completo">
-                <!-- PROBLEMA: Input sem label associado -->
-                <span>
-                  <span>👤</span>
-                  Nome completo *
-                </span>
-                <input
-                  type="text"
-                  id="nome"
-                  name="nome"
-                  required
-                  placeholder="Digite seu nome completo"
-                  autocomplete="name"
-                />
-                <div id="erro-nome" class="mensagem-erro"></div>
-              </div>
-
-              <div class="grupo-campo">
-                <!-- PROBLEMA: Input sem label associado -->
-                <span>
-                  <span>📍</span>
-                  CEP *
-                </span>
-                <input
-                  type="text"
-                  id="cep"
-                  name="cep"
-                  placeholder="00000-000"
-                  required
-                  autocomplete="postal-code"
-                  maxlength="9"
-                />
-                <p id="ajuda-cep" class="ajuda">
-                  Precisamos do CEP para calcular o frete
-                </p>
-                <div id="erro-cep" class="mensagem-erro"></div>
-              </div>
-
-              <div class="grupo-campo">
-                <!-- PROBLEMA: Input sem label associado -->
-                <p>
-                  <span>🏠</span>
-                  Endereço completo
-                </p>
-                <input
-                  type="text"
-                  id="endereco"
-                  name="endereco"
-                  placeholder="Rua, número, bairro, cidade"
-                  autocomplete="street-address"
-                />
-              </div>
-
-              <div class="grupo-campo">
-                <!-- PROBLEMA: Input sem label associado -->
-                <p>
-                  <span>📱</span>
-                  Telefone para contato
-                </p>
-                <input
-                  type="tel"
-                  id="telefone"
-                  name="telefone"
-                  placeholder="(11) 99999-9999"
-                  autocomplete="tel"
-                  maxlength="15"
-                />
-                <p id="ajuda-telefone" class="ajuda">
-                  Para contato sobre a entrega
-                </p>
-              </div>
-
-              <div class="grupo-campo">
-                <!-- PROBLEMA: Input sem label associado -->
-                <p>
-                  <span>📧</span>
-                  E-mail
-                </p>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="seu@email.com"
-                  autocomplete="email"
-                />
-              </div>
+              <fieldset>
+                <legend>Dados para entrega</legend>
+                <div class="grupo-campo campo-completo">
+                  <label for="nome">
+                    <span aria-hidden="true">👤</span> Nome completo *
+                  </label>
+                  <input
+                    type="text"
+                    id="nome"
+                    name="nome"
+                    required
+                    placeholder="Digite seu nome completo"
+                    autocomplete="name"
+                    aria-describedby="erro-nome"
+                    aria-required="true"
+                  />
+                  <div id="erro-nome" class="mensagem-erro" role="alert"></div>
+                </div>
+                <div class="grupo-campo">
+                  <label for="cep">
+                    <span aria-hidden="true">📍</span> CEP *
+                  </label>
+                  <input
+                    type="text"
+                    id="cep"
+                    name="cep"
+                    placeholder="00000-000"
+                    required
+                    autocomplete="postal-code"
+                    maxlength="9"
+                    aria-describedby="ajuda-cep erro-cep"
+                    aria-required="true"
+                  />
+                  <p id="ajuda-cep" class="ajuda">
+                    Precisamos do CEP para calcular o frete
+                  </p>
+                  <div id="erro-cep" class="mensagem-erro" role="alert"></div>
+                </div>
+                <div class="grupo-campo">
+                  <label for="endereco">
+                    <span aria-hidden="true">🏠</span> Endereço completo
+                  </label>
+                  <input
+                    type="text"
+                    id="endereco"
+                    name="endereco"
+                    placeholder="Rua, número, bairro, cidade"
+                    autocomplete="street-address"
+                  />
+                </div>
+                <div class="grupo-campo">
+                  <label for="telefone">
+                    <span aria-hidden="true">📱</span> Telefone para contato
+                  </label>
+                  <input
+                    type="tel"
+                    id="telefone"
+                    name="telefone"
+                    placeholder="(11) 99999-9999"
+                    autocomplete="tel"
+                    maxlength="15"
+                    aria-describedby="ajuda-telefone"
+                  />
+                  <p id="ajuda-telefone" class="ajuda">
+                    Para contato sobre a entrega
+                  </p>
+                </div>
+                <div class="grupo-campo">
+                  <label for="email">
+                    <span aria-hidden="true">📧</span> E-mail
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="seu@email.com"
+                    autocomplete="email"
+                  />
+                </div>
+              </fieldset>
             </div>
           </fieldset>
 
@@ -501,7 +474,7 @@
             <div class="resumo-visual">
               <img
                 src="https://images.unsplash.com/photo-1541643600914-78b084683601?w=150&h=200&fit=crop&crop=center&q=90"
-                alt="produto do pedido"
+                alt="Resumo do pedido: frasco do perfume Essencia de Suvacu"
                 class="produto-resumo"
                 id="imagem-resumo"
               />
