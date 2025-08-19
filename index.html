@@ -29,13 +29,9 @@
             />
 
             <section class="badges-produto">
-              <p class="badge novo"> <span>🆕</span> LANÇAMENTO </p>
-              <p class="badge melhor-vendido">
-                <span>🏆</span> Nº1 EM VENDAS
-              </p>
-              <p class="badge exclusivo">
-                <span>💎</span> EDIÇÃO LIMITADA
-              </p>
+              <p class="badge novo"><span>🆕</span> LANÇAMENTO</p>
+              <p class="badge melhor-vendido"><span>🏆</span> Nº1 EM VENDAS</p>
+              <p class="badge exclusivo"><span>💎</span> EDIÇÃO LIMITADA</p>
             </section>
           </div>
 
@@ -105,15 +101,12 @@
         </div>
       </header>
 
-      <!-- PROBLEMA: Div usada em vez de tag semântica de seção -->
-      <div class="secao-info">
-        <!-- PROBLEMA: h1 usado fora de ordem hierárquica -->
+      <section class="secao-info">
         <h1>Informações do Produto</h1>
 
         <div class="info-produto">
           <div class="descricao-principal">
-            <!-- PROBLEMA: h3 usado sem h2 anterior -->
-            <h3>Descrição</h3>
+            <h2>Descrição</h2>
             <p>
               O Essencia de Suvacu é uma fragrância envolvente que combina notas
               florais de jasmim e rosas com toques cítricos de bergamota
@@ -125,90 +118,99 @@
           <div class="grid-info">
             <div class="card-info">
               <h3><span>🌸</span> Notas Olfativas</h3>
-              <!-- PROBLEMA: Lista sem estrutura semântica apropriada -->
-              <div>
-                <div>
-                  <strong>Notas de Topo:</strong> Bergamota, Limão Siciliano,
-                  Pêra
-                </div>
-                <div>
-                  <strong>Notas de Coração:</strong> Jasmim, Rosa Damascena,
-                  Peônia
-                </div>
-                <div>
-                  <strong>Notas de Fundo:</strong> Sândalo, Âmbar, Almíscar
-                  Branco
-                </div>
-              </div>
+              <section aria-labelledby="notas-titulo">
+                <h2 id="notas-titulo" class="visually-hidden">
+                  Notas do Perfume
+                </h2>
+                <ul>
+                  <li>
+                    <strong>Notas de Topo:</strong> Bergamota, Limão Siciliano,
+                    Pêra
+                  </li>
+                  <li>
+                    <strong>Notas de Coração:</strong> Jasmim, Rosa Damascena,
+                    Peônia
+                  </li>
+                  <li>
+                    <strong>Notas de Fundo:</strong> Sândalo, Âmbar, Almíscar
+                    Branco
+                  </li>
+                </ul>
+              </section>
             </div>
 
             <div class="card-info">
               <h3><span>📋</span> Especificações Técnicas</h3>
-              <!-- PROBLEMA: Lista sem estrutura semântica apropriada -->
-              <div>
-                <div>Concentração: Eau de Parfum 20%</div>
-                <div>Fixação: 8 a 12 horas</div>
-                <div><span>🏆</span> Melhor Fragrância Feminina 2024</div>
-                <div><span>📦</span> Embalagem premium</div>
-              </div>
+              <ul>
+                <li>Concentração: Eau de Parfum 20%</li>
+                <li>Fixação: 8 a 12 horas</li>
+                <li><span>🏆</span> Melhor Fragrância Feminina 2024</li>
+                <li><span>📦</span> Embalagem premium</li>
+              </ul>
             </div>
           </div>
 
           <div class="avaliacoes-destaque">
             <h3><span>⭐</span> O que dizem nossos clientes</h3>
-            <!-- PROBLEMA: Depoimento sem estrutura semântica de artigo -->
-            <div class="depoimento-cliente">
-              <!-- PROBLEMA: Alt text genérico -->
+            <article class="depoimento-cliente">
               <img
                 src="/img/nonno.tiff"
-                alt="bixim malacabado"
+                alt="homem satisfeito com a eficiencia do produto"
                 class="foto-cliente"
                 loading="lazy"
                 onerror="this.style.display='none'"
               />
-              <!-- PROBLEMA: Citação sem tag semântica apropriada -->
-              <div>
+              <blockquote>
                 <p>
                   "Antes eu passava qualquer paninho molhado, agora me
                   transformei com Sifurrah"
                 </p>
                 <span>- Marc Nonno, Turim - Itália</span>
-              </div>
-            </div>
+              </blockquote>
+            </article>
 
-            <!-- PROBLEMA: Depoimento sem estrutura semântica de artigo -->
-            <div class="depoimento-cliente">
-              <!-- PROBLEMA: Citação sem tag semântica apropriada -->
-              <div>
+            <article class="depoimento-cliente">
+              <blockquote>
                 <p>
                   "Perfume maravilhoso que elimina qualquer cheiro de "curry" do
                   meu corpo. Minha namorada vai ao delírio"
                 </p>
                 <span>- Baran Gaum, Istambul - Turquia</span>
-              </div>
-              <!-- PROBLEMA: Alt text genérico -->
+              </blockquote>
               <img
                 src="/img/baran.tiff"
-                alt="bixim feiu"
+                alt="homem satisfeito com a eficiencia do produto"
                 class="foto-cliente"
                 loading="lazy"
                 onerror="this.style.display='none'"
               />
-            </div>
+            </article>
           </div>
         </div>
-      </div>
+      </section>
 
-      <!-- PROBLEMA: Div usada em vez de tag semântica de seção -->
-      <div class="secao-extra">
-        <!-- PROBLEMA: h2 usado sem hierarquia apropriada -->
-        <h2 id="titulo-informacoes">
+      <section class="secao-extra">
+        <h1 id="titulo-informacoes">
           <span>ℹ️</span>
           Informações Adicionais
-        </h2>
+        </h1>
 
-        <!-- PROBLEMA: Details sem contexto semântico apropriado -->
-        <div class="info-expandivel">
+        <details>
+          <summary>Política de devolução e garantia</summary>
+          <p>
+            Você tem 30 dias para trocar ou devolver o produto se não estiver
+            satisfeito. O reembolso é integral e o frete de devolução é por
+            nossa conta.
+          </p>
+        </details>
+
+      <section class="secao-extra">
+        <h1 id="titulo-informacoes">
+          <span>ℹ️</span>
+          Informações Adicionais
+        </h1>
+
+        <details class="info-expandivel">
           <h2>
             <span>📄</span>
             Política de devolução e garantia
@@ -220,9 +222,9 @@
               nossa conta.
             </p>
           </div>
-        </div>
+        </details>
 
-        <div class="info-expandivel">
+        <details class="info-expandivel">
           <h2>
             <span>❓</span>
             Perguntas frequentes
@@ -243,32 +245,31 @@
               <p>Sim, é versátil para qualquer ocasião, dia ou noite.</p>
             </div>
           </div>
-        </div>
+        </details>
 
-        <div class="info-expandivel">
+        <details class="info-expandivel">
           <h2>
             <span>⭐</span>
             Mais avaliações dos clientes
           </h2>
           <div class="conteudo-expandivel">
             <div class="avaliacoes-lista">
-              <!-- PROBLEMA: Blockquotes sem estrutura semântica -->
-              <div class="avaliacao-item">
+              <blockquote class="avaliacao-item">
                 <p>"Perfume maravilhoso com ótima fixação. Recomendo muito!"</p>
                 <span>- Maria S., São Paulo</span>
-              </div>
-              <div class="avaliacao-item">
+              </blockquote>
+              <blockquote class="avaliacao-item">
                 <p>"Vale cada centavo. Fragrância única e marcante."</p>
                 <span>- João P., Rio de Janeiro</span>
-              </div>
-              <div class="avaliacao-item">
+              </blockquote>
+              <blockquote class="avaliacao-item">
                 <p>"Entrega rápida e produto exatamente como descrito."</p>
                 <span>- Ana L., Belo Horizonte</span>
-              </div>
+              </blockquote>
             </div>
           </div>
-        </div>
-      </div>
+        </details>
+      </section>
 
       <!-- PROBLEMA: ORDEM DOS PASSOS COMPLETAMENTE ERRADA! -->
       <!-- Deveria ser: Passo 1 → 2 → 3 → 4, mas está 4 → 3 → 1 → 2 -->
@@ -629,9 +630,6 @@
               </div>
             </div>
           </div>
-
-
-        
         </form>
       </div>
 
