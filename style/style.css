@@ -1,3 +1,116 @@
+.garantias ul {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    list-style: none;
+    padding: 0;
+    margin: 1em 0 0 0;
+    justify-content: center;
+}
+.garantia {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    font-size: 1em;
+    font-weight: 500;
+}
+.icone-garantia {
+    font-size: 1.3em;
+}
+.links-rodape {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5em;
+    list-style: none;
+    padding: 0;
+    margin: 1em 0 0 0;
+    justify-content: center;
+}
+.links-rodape li {
+    margin: 0;
+}
+.links-rodape a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1em;
+    transition: color 0.2s;
+}
+.links-rodape a:hover,
+.links-rodape a:focus {
+    color: #4caf50;
+    text-decoration: underline;
+}
+/* Métodos de pagamento acessíveis e visualmente consistentes */
+fieldset.metodos-pagamento {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    border: none;
+    margin: 0 0 1em 0;
+    padding: 0;
+}
+
+.metodos-pagamento label.metodo-pagamento {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    font-size: 1em;
+    font-weight: 500;
+    background: #f8f8f8;
+    border-radius: 6px;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.metodos-pagamento label.metodo-pagamento.destaque {
+    background: #e0ffe0;
+    border: 2px solid #4caf50;
+}
+.metodos-pagamento input[type="radio"] {
+    margin-right: 0.5em;
+}
+/* Fieldset e legend para formulários acessíveis */
+fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+    min-width: 0;
+}
+
+legend {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    font-size: 1em;
+    margin-bottom: 0.3em;
+}
+
+.campo-formulario {
+    margin-bottom: 1em;
+}
+
+.opcao-tamanho label {
+    margin-right: 1.5em;
+    font-weight: 500;
+}
+/* Acessibilidade: Esconde visualmente mas mantém para leitores de tela */
+.visually-hidden {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+}
 * {
     margin: 0;
     padding: 0;

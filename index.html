@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
+  <!-- ...código existente... -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SIFURRAH - EAU de SUVACU</title>
@@ -21,11 +22,22 @@
         </div>
 
         <div class="titulo-produto">
-              <h1 class="nome-perfume">ESSENCIA DE SUVACU</h1>
-              <p class="subtitulo-perfume">O Perfume dos Sonhos</p>
-            </div>
-        <section class="container-cabecalho">
-          <div class="imagem-principal">
+            <section class="garantias" aria-label="Garantias da loja">
+              <ul>
+                <li class="garantia">
+                  <span class="icone-garantia" aria-hidden="true">✓</span>
+                  <span class="texto-garantia">Garantia de 30 dias</span>
+                </li>
+                <li class="garantia">
+                  <span class="icone-garantia" aria-hidden="true">🚚</span>
+                  <span class="texto-garantia">Frete grátis acima de R$ 200</span>
+                </li>
+                <li class="garantia">
+                  <span class="icone-garantia" aria-hidden="true">⚡</span>
+                  <span class="texto-garantia">Entrega em 3-5 dias úteis</span>
+                </li>
+              </ul>
+            </section>
             <img
               src="https://images.unsplash.com/photo-1541643600914-78b084683601?w=400&h=500&fit=crop&crop=center&q=80"
               alt="perfume chanel numero cinco"
@@ -41,47 +53,56 @@
 
           <div class="info-cabecalho">
             <div class="propaganda-principal">
-              <p class="frase-impacto">
-                "Uma fragrância que desperta mistério e sedução a cada borrifo"
-              </p>
-              <p class="descricao-luxo">
-                Criado pelos melhores perfumistas franceses com ingredientes
-                raros e preciosos. Uma experiência olfativa única que marca sua
-                presença por onde você passa.
-              </p>
-            </div>
+              <fieldset class="opcao-tamanho">
+                <legend class="visually-hidden">Escolha o tamanho do frasco</legend>
+                <label for="frasco-pequeno">
+                  <input
+                    type="radio"
+                    id="frasco-pequeno"
+                    name="tamanho"
+                    value="pequeno"
+                    checked
+                    aria-checked="true"
+                    aria-label="Frasco pequeno 30ml"
+                    required
+                  />
+                  <span class="mini-frasco" aria-hidden="true"></span>
+                  30ml
+                </label>
+                <label for="frasco-grande">
+                  <input
+                    type="radio"
+                    id="frasco-grande"
+                    name="tamanho"
+                    value="grande"
+                    aria-label="Frasco grande 100ml"
+                    required
+                  />
+                  <span class="mini-frasco" aria-hidden="true"></span>
+                  100ml
+                </label>
+              </fieldset>
 
-            <div class="credenciais-produto">
-              <!-- PROBLEMA: Avaliação sem contexto semântico -->
-              <div class="avaliacao-estrelas">
-                <span class="estrelas">★★★★★</span>
-                <span class="texto-avaliacao"
-                  >4,8 de 5 estrelas | 2.847 clientes satisfeitos</span
-                >
-              </div>
-
-              <!-- PROBLEMA: Lista de prêmios sem estrutura semântica -->
-              <div class="premios-reconhecimentos">
-                <p class="premio">
-                  <span>🏆</span>
-                  Melhor Fragrância Feminina 2024
-                </p>
-                <p class="premio">
-                  <span>🌟</span>
-                  Revista Vogue Beauty Awards
-                </p>
-              </div>
-
-              <div class="disponibilidade">
-                <!-- PROBLEMA: Informação urgente sem marcação semântica -->
-                <p class="estoque-urgencia">
-                  <span>⚡</span>
-                  Apenas 7 unidades restantes em estoque
-                </p>
-                <p class="frete-info">
-                  <span>🚚</span>
-                  Frete grátis para todo Brasil acima de R$ 200
-                </p>
+              <fieldset class="dados-pessoais">
+                <legend class="visually-hidden">Dados pessoais</legend>
+                <div class="campo-formulario">
+                  <label for="nome">Nome completo</label>
+                  <input type="text" id="nome" name="nome" required aria-required="true" />
+                </div>
+                <div class="campo-formulario">
+                  <label for="email">E-mail</label>
+                  <input type="email" id="email" name="email" required aria-required="true" />
+                </div>
+                <div class="campo-formulario">
+                  <label for="endereco">Endereço</label>
+                  <input type="text" id="endereco" name="endereco" required aria-required="true" />
+                </div>
+                <div class="campo-formulario">
+                  <label for="cep">CEP</label>
+                  <input type="text" id="cep" name="cep" required aria-required="true" pattern="\d{5}-\d{3}" aria-describedby="ajuda-cep" />
+                  <span id="ajuda-cep" class="visually-hidden">Formato: 00000-000</span>
+                </div>
+              </fieldset>
               </div>
             </div>
           </div>
@@ -149,41 +170,39 @@
           </div>
 
           <div class="avaliacoes-destaque">
-            <h3><span>⭐</span> O que dizem nossos clientes</h3>
-            <article class="depoimento-cliente">
-              <img
-                src="/img/nonno.tiff"
-                alt="Homem satisfeito com a eficiencia do produto"
-                class="foto-cliente"
-                loading="lazy"
-                onerror="this.style.display='none'"
-              />
-              <blockquote>
-                <p>
-                  "Antes eu passava qualquer paninho molhado, agora me
-                  transformei com Sifurrah"
-                </p>
-                <span>- Marc Nonno, Turim - Itália</span>
-              </blockquote>
-            </article>
-
-            <article class="depoimento-cliente">
-              <blockquote>
-                <p>
-                  "Perfume maravilhoso que elimina qualquer cheiro de "curry" do
-                  meu corpo. Minha namorada vai ao delírio"
-                </p>
-                <span>- Baran Gaum, Istambul - Turquia</span>
-              </blockquote>
-              <img
-                src="/img/baran.tiff"
-                alt="homem satisfeito com a eficiencia do produto"
-                class="foto-cliente"
-                loading="lazy"
-                onerror="this.style.display='none'"
-              />
-            </article>
-          </div>
+            <section class="avaliacoes-destaque" aria-labelledby="titulo-avaliacoes">
+              <h3 id="titulo-avaliacoes"><span>⭐</span> O que dizem nossos clientes</h3>
+              <article class="depoimento-cliente">
+                <img
+                  src="/img/nonno.tiff"
+                  alt="Foto de Marc Nonno, cliente satisfeito de Turim, Itália"
+                  class="foto-cliente"
+                  loading="lazy"
+                  onerror="this.style.display='none'"
+                />
+                <blockquote>
+                  <p>
+                    "Antes eu passava qualquer paninho molhado, agora me transformei com Sifurrah"
+                  </p>
+                  <cite>- Marc Nonno, Turim - Itália</cite>
+                </blockquote>
+              </article>
+              <article class="depoimento-cliente">
+                <img
+                  src="/img/baran.tiff"
+                  alt="Foto de Baran Gaum, cliente satisfeito de Istambul, Turquia"
+                  class="foto-cliente"
+                  loading="lazy"
+                  onerror="this.style.display='none'"
+                />
+                <blockquote>
+                  <p>
+                    "Perfume maravilhoso que elimina qualquer cheiro de 'curry' do meu corpo. Minha namorada vai ao delírio"
+                  </p>
+                  <cite>- Baran Gaum, Istambul - Turquia</cite>
+                </blockquote>
+              </article>
+            </section>
         </div>
       </section>
 
@@ -304,7 +323,6 @@
               />
               <div class="opcao-tamanho">
                 <div class="tamanho-visual">
-                  <!-- PROBLEMA: Alt text genérico -->
                   <img
                     src="https://images.unsplash.com/photo-1615634260167-c8cdede054de?w=80&h=100&fit=crop&crop=center&q=90"
                     alt="frasco de 50ml"
@@ -328,10 +346,9 @@
               />
               <div class="opcao-tamanho popular">
                 <div class="tamanho-visual">
-                  <!-- PROBLEMA: Alt text genérico -->
                   <img
                     src="https://images.unsplash.com/photo-1541643600914-78b084683601?w=80&h=100&fit=crop&crop=center&q=90"
-                    alt="frasco lixo"
+                    alt="frasco de 75ml"
                     class="mini-frasco"
                   />
                 </div>
@@ -353,10 +370,9 @@
               />
               <div class="opcao-tamanho melhor-valor">
                 <div class="tamanho-visual">
-                  <!-- PROBLEMA: Alt text genérico -->
                   <img
                     src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?w=80&h=100&fit=crop&crop=center&q=90"
-                    alt="imagem do produto bem ruimzim"
+                    alt="frasco de 100ml"
                     class="mini-frasco"
                   />
                 </div>
@@ -443,10 +459,10 @@
 
               <div class="grupo-campo">
                 <!-- PROBLEMA: Input sem label associado -->
-                <span>
+                <p>
                   <span>🏠</span>
                   Endereço completo
-                </span>
+                </p>
                 <input
                   type="text"
                   id="endereco"
@@ -458,10 +474,10 @@
 
               <div class="grupo-campo">
                 <!-- PROBLEMA: Input sem label associado -->
-                <span>
+                <p>
                   <span>📱</span>
                   Telefone para contato
-                </span>
+                </p>
                 <input
                   type="tel"
                   id="telefone"
@@ -477,10 +493,10 @@
 
               <div class="grupo-campo">
                 <!-- PROBLEMA: Input sem label associado -->
-                <span>
+                <p>
                   <span>📧</span>
                   E-mail
-                </span>
+                </p>
                 <input
                   type="email"
                   id="email"
@@ -493,106 +509,98 @@
           </fieldset>
 
           <!-- PROBLEMA: Resumo do pedido sem contexto semântico e sem atualizações em tempo real -->
-          <div class="resumo-pedido">
+          <section class="resumo-pedido" aria-labelledby="titulo-resumo" aria-live="polite">
             <h3 id="titulo-resumo">
               <span>📄</span>
               Resumo do Seu Pedido
             </h3>
             <div class="resumo-visual">
-              <!-- PROBLEMA: Alt text genérico -->
               <img
                 src="https://images.unsplash.com/photo-1541643600914-78b084683601?w=150&h=200&fit=crop&crop=center&q=90"
-                alt="bagaceira"
+                alt="produto do pedido"
                 class="produto-resumo"
                 id="imagem-resumo"
               />
-              <!-- PROBLEMA: Lista de definições sem estrutura semântica -->
-              <div class="detalhes-pedido">
-                <div>Produto:</div>
-                <div id="produto-selecionado">
-                  Perfume Essencia de Suvacu 50ml
-                </div>
-
-                <div>Quantidade:</div>
-                <div id="quantidade-selecionada">1 unidade</div>
-
-                <div>Subtotal:</div>
-                <div id="subtotal">R$ 299,90</div>
-
-                <div>
-                  <span>💰</span>
-                  Desconto à vista (PIX):
-                </div>
-                <div id="desconto" class="destaque-desconto">
-                  R$ 29,99 (10%)
-                </div>
-
-                <div><strong>Total à vista:</strong></div>
-                <div id="total-avista" class="total-destaque">
-                  <strong>R$ 269,91</strong>
-                </div>
-
-                <div>
-                  <span>💳</span>
-                  Ou parcelado:
-                </div>
-                <div id="parcelamento">6x de R$ 49,98 sem juros</div>
-              </div>
+              <ul class="detalhes-pedido">
+                <li>
+                  <strong>Produto:</strong>
+                  <ul><li id="produto-selecionado">Perfume Essencia de Suvacu 50ml</li></ul>
+                </li>
+                <li>
+                  <strong>Quantidade:</strong>
+                  <ul><li id="quantidade-selecionada">1 unidade</li></ul>
+                </li>
+                <li>
+                  <strong>Subtotal:</strong>
+                  <ul><li id="subtotal">R$ 299,90</li></ul>
+                </li>
+                <li>
+                  <span>💰</span> <strong>Desconto à vista (PIX):</strong>
+                  <ul><li id="desconto" class="destaque-desconto">R$ 29,99 (10%)</li></ul>
+                </li>
+                <li>
+                  <strong>Total à vista:</strong>
+                  <ul><li id="total-avista" class="total-destaque"><strong>R$ 269,91</strong></li></ul>
+                </li>
+                <li>
+                  <span>💳</span> <strong>Ou parcelado:</strong>
+                  <ul><li id="parcelamento">6x de R$ 49,98 sem juros</li></ul>
+                </li>
+              </ul>
             </div>
-          </div>
+          </section>
 
           <!-- PASSO 4 -->
           <fieldset class="passo-compra passo-4">
             <h1><strong>Passo 4: Confirmar pedido</strong></h1>
 
             <div class="info-pagamento">
-              <!-- PROBLEMA: h4 usado fora de hierarquia -->
               <h2 id="titulo-pagamento">
                 <span>💳</span>
                 Formas de pagamento aceitas
               </h2>
-              <!-- PROBLEMA: Grupo de radio buttons sem estrutura semântica -->
-              <div class="metodos-pagamento">
-                <!-- PROBLEMA: Input sem label associado -->
-                <input
-                  type="radio"
-                  id="pagamento-cartao"
-                  name="pagamento"
-                  value="cartao"
-                />
-                <div class="metodo-pagamento" id="desc-cartao">
-                  <span>💳</span>
+              <fieldset class="metodos-pagamento">
+                <legend class="visually-hidden">Escolha o método de pagamento</legend>
+                <label for="pagamento-cartao" class="metodo-pagamento" id="desc-cartao">
+                  <input
+                    type="radio"
+                    id="pagamento-cartao"
+                    name="pagamento"
+                    value="cartao"
+                    aria-label="Cartão de crédito"
+                    required
+                  />
+                  <span aria-hidden="true">💳</span>
                   Cartão de crédito
-                </div>
-
-                <!-- PROBLEMA: Input sem label associado -->
-                <input
-                  type="radio"
-                  id="pagamento-pix"
-                  name="pagamento"
-                  value="pix"
-                  checked
-                />
-                <div class="metodo-pagamento destaque" id="desc-pix">
-                  <span>🔄</span>
+                </label>
+                <label for="pagamento-pix" class="metodo-pagamento destaque" id="desc-pix">
+                  <input
+                    type="radio"
+                    id="pagamento-pix"
+                    name="pagamento"
+                    value="pix"
+                    checked
+                    aria-label="PIX (10% desconto)"
+                    required
+                  />
+                  <span aria-hidden="true">🔄</span>
                   PIX (10% desconto)
-                </div>
-
-                <!-- PROBLEMA: Input sem label associado -->
-                <input
-                  type="radio"
-                  id="pagamento-boleto"
-                  name="pagamento"
-                  value="boleto"
-                />
-                <div class="metodo-pagamento" id="desc-boleto">
-                  <span>📄</span>
+                </label>
+                <label for="pagamento-boleto" class="metodo-pagamento" id="desc-boleto">
+                  <input
+                    type="radio"
+                    id="pagamento-boleto"
+                    name="pagamento"
+                    value="boleto"
+                    aria-label="Boleto bancário"
+                    required
+                  />
+                  <span aria-hidden="true">📄</span>
                   Boleto bancário
-                </div>
-              </div>
+                </label>
+              </fieldset>
             </div>
 
-            <!-- PROBLEMA: Botão sem contexto semântico -->
             <button
               type="button"
               id="finalizar-pedido"
@@ -603,30 +611,18 @@
               FINALIZAR PEDIDO - <span id="valor-final">R$ 269,91</span>
             </button>
 
-            <!-- PROBLEMA: Lista de garantias sem estrutura semântica -->
-            <div class="garantias" id="garantias-lista">
-              <div class="garantia-item">
-                <span>✓</span>
-                Garantia de 30 dias
-              </div>
-              <div class="garantia-item">
-                <span>🚚</span>
-                Frete grátis acima de R$ 200
-              </div>
-              <div class="garantia-item">
-                <span>⚡</span>
-                Entrega em 3-5 dias úteis
-              </div>
-            </div>
+            <ul class="garantias" id="garantias-lista">
+              <li class="garantia-item"><span>✓</span> Garantia de 30 dias</li>
+              <li class="garantia-item"><span>🚚</span> Frete grátis acima de R$ 200</li>
+              <li class="garantia-item"><span>⚡</span> Entrega em 3-5 dias úteis</li>
+            </ul>
           </fieldset>
         </form>
       </section>
 
-      <!-- PROBLEMA: Seção de sucesso sem contexto semântico -->
-      <div id="mensagem-sucesso" class="oculto secao-sucesso">
+      <section id="mensagem-sucesso" class="oculto secao-sucesso">
         <div class="icone-sucesso">✅</div>
-        <!-- PROBLEMA: h2 usado sem hierarquia apropriada -->
-        <h2 id="titulo-sucesso">Pedido Realizado com Sucesso!</h2>
+        <h1 id="titulo-sucesso">Pedido Realizado com Sucesso!</h1>
 
         <div class="detalhes-sucesso">
           <p>
@@ -635,17 +631,20 @@
           </p>
 
           <div class="card-pedido">
-            <!-- PROBLEMA: Lista de definições sem estrutura semântica -->
-            <div>
-              <div><span>📋</span> Número do pedido:</div>
-              <div id="numero-pedido">SIFU12345</div>
-
-              <div><span>💰</span> Total pago:</div>
-              <div id="total-pago">R$ 269,91</div>
-
-              <div><span>🚚</span> Prazo de entrega:</div>
-              <div>3 a 5 dias úteis</div>
-            </div>
+            <ul class="lista-pedido">
+              <li>
+                <span>📋</span> <strong>Número do pedido:</strong>
+                <ul><li id="numero-pedido">SIFU12345</li></ul>
+              </li>
+              <li>
+                <span>💰</span> <strong>Total pago:</strong>
+                <ul><li id="total-pago">R$ 269,91</li></ul>
+              </li>
+              <li>
+                <span>🚚</span> <strong>Prazo de entrega:</strong>
+                <ul><li>3 a 5 dias úteis</li></ul>
+              </li>
+            </ul>
           </div>
 
           <p>
@@ -657,14 +656,21 @@
             <span>🔄</span> Fazer Nova Compra
           </button>
         </div>
-      </div>
+      </section>
     </main>
 
     <footer class="rodape">
       <p>&copy; 2024 SIFURRAH. Todos os direitos reservados.</p>
-      <p class="info-acessibilidade">
+      <p class="info-acessibilidade" aria-live="polite">
         Página otimizada para leitores de tela e navegação por teclado
       </p>
+      <nav aria-label="Links do rodapé">
+        <ul class="links-rodape">
+          <li><a href="#">Política de Privacidade</a></li>
+          <li><a href="#">Termos de Uso</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </nav>
     </footer>
   </body>
 </html>
